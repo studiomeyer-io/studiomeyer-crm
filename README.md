@@ -145,7 +145,7 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 | Built-in Guide | 12 topics | No | No | No |
 | Stripe Sync | Yes | No | No | No |
 | Zero-Knowledge Creds | Yes | No | No | No |
-| Self-hosted option | Yes | No | No | Yes |
+| Hosted MCP | Yes | No | No | No |
 
 ---
 
