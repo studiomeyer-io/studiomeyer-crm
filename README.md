@@ -4,6 +4,7 @@
 
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.studiomeyer%2Fcrm-blue)](https://registry.modelcontextprotocol.io/servers/io.studiomeyer/crm)
 [![MCPize](https://img.shields.io/badge/MCPize-studiomeyer--crm-purple)](https://mcpize.com/mcp/studiomeyer-crm)
+[![Glama](https://glama.ai/mcp/servers/studiomeyer-io/studiomeyer-crm/badges/score.svg)](https://glama.ai/mcp/servers/studiomeyer-io/studiomeyer-crm)
 
 ---
 
@@ -184,5 +185,5 @@ AI agency from Mallorca. Building AI tools since 2024.
 
 ## License
 
-Proprietary. This repository contains documentation only.
+MIT — see [LICENSE](LICENSE). This repository contains documentation only.
 The CRM server is hosted at [crm.studiomeyer.io](https://crm.studiomeyer.io).
