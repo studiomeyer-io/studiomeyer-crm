@@ -26,7 +26,7 @@ Add the server URL in Claude Desktop settings:
 https://crm.studiomeyer.io/mcp
 ```
 
-OAuth 2.1 authentication will guide you through setup.
+You'll receive a sign-in link via email to verify your identity — no passwords needed.
 
 ### Option 2: Claude Code
 
@@ -162,6 +162,7 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 
 ## Security
 
+- **Magic Link Authentication** — email verification on every sign-in. No passwords stored. You receive a single-use link that expires in 10 minutes. Nobody can access your data without proving email ownership.
 - **OAuth 2.1** with PKCE S256 (RFC 8414, 7591, 9728, 7009)
 - **Database:** Supabase EU (Frankfurt, Germany), SOC 2 Type II
 - **Multi-tenant:** Shared-table isolation with Row Level Security
