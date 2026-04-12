@@ -1,8 +1,1 @@
-{
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.studiomeyer/crm",
-  "title": "StudioMeyer CRM",
-  "description": "AI-native CRM as MCP Server — 33 tools for contact management, pipeline, leads, follow-ups, health scores, revenue analytics, Stripe sync, audit trail. Magic Link email verification — no passwords. Free tier available. EU hosted (Frankfurt).",
-  "version": "2.5.0",
-  "remotes": [{ "type": "streamable-http", "url": "https://crm.studiomeyer.io/mcp" }]
-}
+ewogICIkc2NoZW1hIjogImh0dHBzOi8vc3RhdGljLm1vZGVsY29udGV4dHByb3RvY29sLmlvL3NjaGVtYXMvMjAyNS0xMi0xMS9zZXJ2ZXIuc2NoZW1hLmpzb24iLAogICJuYW1lIjogImlvLnN0dWRpb21leWVyL2NybSIsCiAgInRpdGxlIjogIlN0dWRpb01leWVyIENSTSIsCiAgImRlc2NyaXB0aW9uIjogIkFJLW5hdGl2ZSBDUk0gYXMgTUNQIFNlcnZlciDigJQgMzMgdG9vbHMgZm9yIGNvbnRhY3QgbWFuYWdlbWVudCwgcGlwZWxpbmUsIGxlYWRzLCBmb2xsb3ctdXBzLCBoZWFsdGggc2NvcmVzLCByZXZlbnVlIGFuYWx5dGljcywgU3RyaXBlIHN5bmMsIGF1ZGl0IHRyYWlsLiBNYWdpYyBMaW5rIGVtYWlsIHZlcmlmaWNhdGlvbiDigJQgbm8gcGFzc3dvcmRzLiBGcmVlIHRpZXIgYXZhaWxhYmxlLiBFVSBob3N0ZWQgKEZyYW5rZnVydCkuIiwKICAidmVyc2lvbiI6ICIyLjYuNCIsCiAgInJlbW90ZXMiOiBbeyAidHlwZSI6ICJzdHJlYW1hYmxlLWh0dHAiLCAidXJsIjogImh0dHBzOi8vY3JtLnN0dWRpb21leWVyLmlvL21jcCIgfV0KfQo=
