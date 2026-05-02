@@ -4,6 +4,8 @@
 
 # StudioMeyer CRM
 
+[![smithery badge](https://smithery.ai/badge/cod-gb2l/StudioMeyer-CRM)](https://smithery.ai/servers/cod-gb2l/StudioMeyer-CRM)
+
 **AI-native CRM as MCP Server. 33 tools, 3 resources, 3 prompts. No dashboard needed — your AI is the interface.**
 
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.studiomeyer%2Fcrm-blue)](https://registry.modelcontextprotocol.io/servers/io.studiomeyer/crm)
