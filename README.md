@@ -188,6 +188,10 @@ AI agency from Mallorca. Building AI tools since 2024.
 
 ---
 
+## About StudioMeyer
+
+[StudioMeyer](https://studiomeyer.io) is an AI and design studio from Palma de Mallorca, building custom websites and AI infrastructure for small and medium businesses. Production stack on Claude Agent SDK, MCP, n8n and an in-house observability and guard layer.
+
 ## License
 
 MIT — see [LICENSE](LICENSE). This repository contains documentation only.
