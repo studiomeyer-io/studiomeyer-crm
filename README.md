@@ -170,9 +170,9 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | $0/mo | 33 tools, 200 calls/day, 1 user |
-| **Pro** | $29/mo | 33 tools, 10K calls/day, priority support |
-| **Team** | $49/mo | 33 tools, unlimited, 5 users, shared pipeline |
+| **Free** | €0/mo | 33 tools, 200 calls/day, 1 user |
+| **Pro** | €19/mo | 33 tools, 10K calls/day, priority support |
+| **Team** | €39/mo | 33 tools, unlimited, 5 users, shared pipeline |
 
 ---
 
