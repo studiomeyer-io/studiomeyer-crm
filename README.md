@@ -6,7 +6,7 @@
 
 [![smithery badge](https://smithery.ai/badge/cod-gb2l/StudioMeyer-CRM)](https://smithery.ai/servers/cod-gb2l/StudioMeyer-CRM)
 
-**AI-native CRM as MCP Server. 33 tools, 3 resources, 3 prompts. No dashboard needed — your AI is the interface.**
+**AI-native CRM as MCP Server. 37 tools, 3 resources, 3 prompts, and an interactive in-chat dashboard. No separate dashboard to log into — your AI is the interface.**
 
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.studiomeyer%2Fcrm-blue)](https://registry.modelcontextprotocol.io/servers/io.studiomeyer/crm)
 [![MCPize](https://img.shields.io/badge/MCPize-studiomeyer--crm-purple)](https://mcpize.com/mcp/studiomeyer-crm)
@@ -26,9 +26,9 @@ From a small studio in Palma de Mallorca.
 
 ## What is this?
 
-StudioMeyer CRM is a **headless contact server** built as an MCP server. Instead of clicking through a CRM dashboard, you talk to your AI assistant — it manages companies, contacts, deals, leads, follow-ups, and revenue analytics for you.
+StudioMeyer CRM is a **headless contact server** built as an MCP server. Instead of clicking through a CRM dashboard, you talk to your AI assistant — it manages companies, contacts, deals, leads, follow-ups, and revenue analytics for you. When you want to *see* the pipeline, it renders an interactive dashboard right inside the chat.
 
-The only production-ready standalone MCP CRM on the market. Not a bridge to HubSpot or Salesforce — a complete CRM that lives inside your AI workflow.
+A production-ready, **EU-hosted, GDPR-native** standalone MCP CRM. Not a bridge to HubSpot or Salesforce — a complete CRM that lives inside your AI workflow, with subject-rights (Art. 15 / Art. 17) built in as tools.
 
 ---
 
@@ -66,9 +66,16 @@ Subscribe and connect via the MCPize gateway.
 
 ---
 
-## Tools (33)
+## Tools (37)
 
-### Core CRM (23)
+### Discovery & insight
+
+| Tool | Description |
+|------|-------------|
+| `crm_schema` | The CRM's own schema — entities, required-for-create fields, valid enums, relations. Call it before writing so the AI uses the right shape instead of guessing. |
+| `crm_attention` | "What should I act on?" — overdue follow-ups, stale deals, deals missing a value, unconverted hot leads, each with a recommended next step. |
+
+### Core CRM
 
 | Tool | Description |
 |------|-------------|
@@ -87,16 +94,25 @@ Subscribe and connect via the MCPize gateway.
 | `crm_follow_up` | Create, list, or complete follow-ups with priority and overdue tracking |
 | `crm_search` | Full-text search across all entities (German + English stemming) |
 | `crm_health_scores` | Health scores 0-100 with factor breakdown |
-| `crm_dashboard` | Pipeline + MRR + health + activity + alerts in one call |
+| `crm_dashboard` | Pipeline + MRR + health + activity + alerts in one call — renders the in-chat dashboard widget |
 | `crm_stats` | Aggregate metrics |
 | `crm_sync_stripe` | Sync revenue data from Stripe |
 | `crm_revenue_report` | MRR/ARR/growth by company and product |
+| `crm_record_revenue` | Record monthly revenue per company/product |
 | `crm_import` | Bulk CSV/JSON import (auto-maps DE+EN headers, dedup, dry-run) |
 | `crm_export` | CSV/JSON export: contacts, companies, deals, leads |
-| `crm_audit_log` | Audit trail: who changed what, when |
+| `crm_audit_log` | Audit trail: who changed what, when (with a `since` filter for change-tracking) |
 | `crm_connect` | Zero-knowledge credentials: configure integrations via browser |
 
-### Management (5 Delete Tools)
+### Compliance (GDPR / DSGVO)
+
+| Tool | Description |
+|------|-------------|
+| `crm_gdpr` | Subject rights by natural language — **Art. 15** access export (the full record held for a data subject) and **Art. 17** erasure (preview the cascade with `dryRun`, then erase), logged for the compliance trail |
+
+### Management — delete (with `dryRun` safety)
+
+Every delete accepts `dryRun: true` to preview exactly what would be removed (including cascade) before you confirm. Deletes also snapshot the record into the audit log, so they are forensically restorable.
 
 | Tool | Description |
 |------|-------------|
@@ -106,8 +122,9 @@ Subscribe and connect via the MCPize gateway.
 | `crm_note_delete` | Hard-delete note |
 | `crm_lead_delete` | Hard-delete lead |
 | `crm_follow_up_delete` | Hard-delete follow-up |
+| `crm_interaction_delete` | Hard-delete a logged interaction |
 
-### System (5)
+### System
 
 | Tool | Description |
 |------|-------------|
@@ -131,6 +148,8 @@ Subscribe and connect via the MCPize gateway.
 | `daily-briefing` | Morning briefing with priorities |
 | `pipeline-forecast` | Revenue forecast |
 
+Every tool returns **structured output** (`structuredContent`) alongside text, so hosts and the in-chat dashboard widget read typed results without re-parsing.
+
 ---
 
 ## Search
@@ -150,8 +169,10 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 | Feature | StudioMeyer CRM | HubSpot MCP | Pipedrive MCP | nxt3d/mcp-crm |
 |---------|-----------------|-------------|---------------|---------------|
 | Standalone CRM | Yes | Bridge only | Bridge only | SQLite PoC |
-| Tools | 33 | ~10 | ~8 | ~5 |
+| Tools | 37 | ~10 | ~8 | ~5 |
 | MCP-native | Yes | Wrapper | Wrapper | Yes |
+| In-chat dashboard (MCP App) | Yes | No | No | No |
+| Schema discovery tool | Yes | No | No | No |
 | Pipeline + Deals | Yes | Via HubSpot | Via Pipedrive | No |
 | Lead Management | Yes | Via HubSpot | Via Pipedrive | No |
 | Follow-ups | Yes | No | No | No |
@@ -159,9 +180,12 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 | Revenue Analytics | Yes | Via HubSpot | Via Pipedrive | No |
 | Health Scores | Yes | No | No | No |
 | Audit Log | Yes | No | No | No |
+| GDPR subject rights (Art. 15/17) | Yes | No | No | No |
+| Safe deletes (dry-run preview) | Yes | No | No | No |
 | Built-in Guide | 12 topics | No | No | No |
 | Stripe Sync | Yes | No | No | No |
 | Zero-Knowledge Creds | Yes | No | No | No |
+| EU-hosted (Frankfurt) | Yes | US | US | self-host |
 | Hosted MCP | Yes | No | No | No |
 
 ---
@@ -170,9 +194,9 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | €0/mo | 33 tools, 200 calls/day, 1 user |
-| **Pro** | €19/mo | 33 tools, 10K calls/day, priority support |
-| **Team** | €39/mo | 33 tools, unlimited, 5 users, shared pipeline |
+| **Free** | €0/mo | 37 tools, 200 calls/day, 1 user |
+| **Pro** | €19/mo | 37 tools, 10K calls/day, priority support |
+| **Team** | €39/mo | 37 tools, unlimited, 5 users, shared pipeline |
 
 ---
 
@@ -181,10 +205,11 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 - **Magic Link Authentication** — email verification on every sign-in. No passwords stored. You receive a single-use link that expires in 10 minutes. Nobody can access your data without proving email ownership.
 - **OAuth 2.1** with PKCE S256 (RFC 8414, 7591, 9728, 7009)
 - **Database:** Supabase EU (Frankfurt, Germany), SOC 2 Type II
-- **Multi-tenant:** Shared-table isolation with Row Level Security
+- **Multi-tenant:** Shared-table isolation enforced in the data layer, with a static CI gate that fails the build if a query forgets its tenant scope
+- **GDPR / DSGVO:** EU data residency + Art. 15 access export and Art. 17 erasure as first-class tools
 - **Zero-Knowledge Credentials:** AES-256-GCM encryption, browser-based entry
-- **Input Validation:** Zod schemas on all 33 tools
-- **Audit Log:** Every mutation tracked with tenant isolation
+- **Input Validation:** Zod schemas on all 37 tools
+- **Audit Log:** Every mutation tracked with tenant isolation; deletes snapshot the record for forensic restore
 
 ---
 
