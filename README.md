@@ -6,7 +6,7 @@
 
 [![smithery badge](https://smithery.ai/badge/cod-gb2l/StudioMeyer-CRM)](https://smithery.ai/servers/cod-gb2l/StudioMeyer-CRM)
 
-**AI-native CRM as MCP Server. 37 tools, 3 resources, 3 prompts, and an interactive in-chat dashboard. No separate dashboard to log into — your AI is the interface.**
+**AI-native CRM as MCP Server. 37 tools, 4 resources, 3 prompts, and an interactive in-chat dashboard. No separate dashboard to log into — your AI is the interface.**
 
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.studiomeyer%2Fcrm-blue)](https://registry.modelcontextprotocol.io/servers/io.studiomeyer/crm)
 [![MCPize](https://img.shields.io/badge/MCPize-studiomeyer--crm-purple)](https://mcpize.com/mcp/studiomeyer-crm)
