@@ -194,9 +194,9 @@ Searches across companies, contacts, interactions, deals, notes, leads, and tags
 
 | Plan | Price | Included |
 |------|-------|----------|
-| **Free** | €0/mo | 37 tools, 200 calls/day, 1 user |
-| **Pro** | €19/mo | 37 tools, 10K calls/day, priority support |
-| **Team** | €39/mo | 37 tools, unlimited, 5 users, shared pipeline |
+| **Free** | €0/mo | 37 tools, 50 companies, 200 contacts, 100 deals, 5,000 calls/day |
+| **Pro** | €9/mo | 37 tools, 500 companies, 5,000 contacts, 50,000 calls/day |
+| **Team** | €19/mo | 37 tools, unlimited records, 20 API keys, 100,000 calls/day |
 
 ---
 
