@@ -9,7 +9,7 @@ StudioMeyer CRM works best with the rest of the suite. All products share the sa
 | **[Memory](https://github.com/studiomeyer-io/studiomeyer-memory)** | 56 | `memory.studiomeyer.io/mcp` | Free / 9€ / 19€ |
 | **[CRM](https://github.com/studiomeyer-io/studiomeyer-crm)** | 37 | `crm.studiomeyer.io/mcp` | Free / 9€ / 19€ |
 | **[GEO](https://github.com/studiomeyer-io/studiomeyer-geo)** | 30 | `geo.studiomeyer.io/mcp` | Free |
-| **[Crew](https://github.com/studiomeyer-io/mcp-crew)** | 16 | `crew.studiomeyer.io/mcp` | Free |
+| **[Crew](https://github.com/studiomeyer-io/studiomeyer-crew)** | 16 | `crew.studiomeyer.io/mcp` | Free |
 
 ## Claude Code Plugin Suite
 
